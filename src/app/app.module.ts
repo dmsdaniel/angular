@@ -21,6 +21,7 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {LocationStrategy,HashLocationStrategy} from '@angular/common'
 
 
 @NgModule({
@@ -46,7 +47,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [UsuariosService, { provide: LOCALE_ID, useValue: 'pt-BR' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
