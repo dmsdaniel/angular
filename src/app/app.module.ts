@@ -1,6 +1,6 @@
 import { BrowserModule, platformBrowser } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ROUTES } from './app.route';
@@ -10,9 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
-import { UsuariosComponent } from './usuarios/usuarios.component';
-import { UsuariosService } from './usuarios/usuario.service';
-import { UsuarioComponent } from './usuarios/usuario/usuario.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
@@ -31,8 +28,6 @@ import {LocationStrategy,HashLocationStrategy} from '@angular/common'
     HomeComponent,
     RestaurantsComponent,
     RestaurantComponent,
-    UsuariosComponent,
-    UsuarioComponent,
     RestaurantDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
@@ -43,7 +38,7 @@ import {LocationStrategy,HashLocationStrategy} from '@angular/common'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
+    HttpClientModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES)
   ],
