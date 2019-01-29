@@ -621,22 +621,6 @@
       ],
       "id": 13
     }
-  ],
-  "usuarios": [
-    {
-      "id": "11dalskjdasldjalsd0",
-      "Nome": "Daniel",
-      "Senha": "123456"
-    },
-    {
-      "id": "22dalskjdasldjalsd0",
-      "Nome": "Usuario2",
-      "Senha": "111111"
-    },
-    {
-      "id": "33dalskjdasldjalsd",
-      "Nome": "Usuario3",
-      "Senha": "333333"
-    }
   ]
+  
 }
