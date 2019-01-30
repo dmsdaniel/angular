@@ -18,7 +18,8 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-import {LocationStrategy,HashLocationStrategy} from '@angular/common'
+import {LocationStrategy,HashLocationStrategy} from '@angular/common';
+import { LoginComponent } from './security/login/login.component'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {LocationStrategy,HashLocationStrategy} from '@angular/common'
     ShoppingCartComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderSumaryComponent
+    OrderSumaryComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
